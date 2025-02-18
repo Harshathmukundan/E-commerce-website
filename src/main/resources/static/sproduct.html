@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="./images/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+               
+                <li><a href="about.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">cart</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img id="product-image" src="" width="70%" height="500px" alt="Product Image">
+        </div>
+        <div class="single-pro-details">
+            <h4 id="product-name"></h4>
+            <h2 id="product-price"></h2>
+            <select>
+                <option>Select size</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+                <option>XL</option>
+            </select>
+            <input type="number" value="1">
+            <button class="btn" onclick="addToCart()">Add to cart</button>
+            <h4>Product details</h4>
+            <span id="product-description">100% cotton</span>
+        </div>
+    </section>
+
+    <script>
+        function addToCart() {
+            const name = document.getElementById('product-name').innerText;
+            const price = document.getElementById('product-price').innerText.replace('₹', '');
+            const image = document.getElementById('product-image').src;
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Add product to cart with image URL
+            cart.push({ name, price: parseFloat(price), image });
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            alert('Item added to cart!');
+        }
+
+
+        window.onload = function() {
+            // Get URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get('name');
+            const price = urlParams.get('price');
+            const image = urlParams.get('image');
+
+            // Set product details in the HTML
+            document.getElementById('product-name').innerText = name || "Product Name";
+            document.getElementById('product-price').innerText = `₹${price || "Price"}`;
+            document.getElementById('product-image').src = image || "default-image.jpg";
+        };
+    </script>
+</body>
+</html>
