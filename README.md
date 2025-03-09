@@ -4,6 +4,6 @@ The website enables users to explore products, manage shopping carts, place orde
 
 With a focus on accessibility, security, and ease of use, the E-commerce Website project empowers businesses to showcase products effectively and simplifies the online shopping journey for customers. This project addresses the needs of today's fast-paced e-commerce market, promoting convenient shopping experiences, enhanced user engagement, and reliable data integrity. By offering a comprehensive shopping platform, the E-commerce Website project serves as a valuable tool for driving sales and building customer loyalty in the digital retail space.
 
+output of the website
 
- run this project by http://localhost:8080/index.html
  
