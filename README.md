@@ -6,6 +6,14 @@ With a focus on accessibility, security, and ease of use, the E-commerce Website
 
 output of the website
 
+![image](https://github.com/user-attachments/assets/78fdab74-203e-4dd5-a877-f9ce45cc1403)
+![image](https://github.com/user-attachments/assets/917c8ceb-67d8-42e9-a1d0-62176a05cd93)
+![image](https://github.com/user-attachments/assets/1ca32c9b-edff-452f-9542-53e3e3c5188c)
+![image](https://github.com/user-attachments/assets/bd03579f-9750-425f-8b24-bcb9618d1b7e)
+![image](https://github.com/user-attachments/assets/a57a2bbe-4157-42df-b32f-1ce66b71e49b)
+
+
+
 
 
 
